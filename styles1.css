@@ -1,0 +1,566 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+/* Header Styles */
+.header-top {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px 0; /* Increased padding for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top img {
+    width: 110px;
+    height: 100px;
+    margin-right: 10px;
+
+}
+
+.header-top .d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.header-top .me-4 {
+    margin-right: 20px;
+}
+
+/* Contact Info */
+.header-top .d-flex i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.header-top .d-flex a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-top .d-flex a:hover {
+    color: #ffcc00; /* Gold hover effect */
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons .social-icon {
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    color: #ffcc00; /* Gold hover effect */
+}
+
+.social-icons .social-icon i {
+    font-size: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-top .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-top .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+        gap: 15px;
+    }
+}
+
+/* Navbar Styling */
+.navbar-custom {
+    background: linear-gradient(45deg, #004cff, #007bff); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    padding: 10px 0; /* Padding for better spacing */
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: white; /* White icon for better visibility */
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #ff6600; /* Change text color on hover */
+    background-color: #fff; /* Light background on hover */
+}
+
+/* Active link styling */
+.navbar-custom .navbar-nav .nav-link.active {
+    color: #ff6600;
+    background-color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-custom .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 18px;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-custom .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
+
+/* Hero Section */
+.carousel .carousel-inner img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: left;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+}
+
+.carousel-caption a {
+    background: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.carousel-caption a:hover {
+    background: #0056b3;
+}
+/*Image section */
+#image-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#image-section img {
+    max-width: 80%;
+    height: auto;
+}
+/* Styles for the Our Services Section */
+#our-services {
+    padding: 5rem 0;
+    background-color: #f8f9fa; /* Light background */
+}
+
+#our-services .service-box {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#our-services .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling for service boxes */
+#our-services .service-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Title styling */
+#our-services .service-box h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+    color: #333333;
+}
+
+/* Paragraph styling */
+#our-services .service-box p {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+#our-services .service-box .btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#our-services .service-box .btn:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+    transform: scale(1.05);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    #our-services {
+        padding: 3rem 1rem;
+    }
+
+    #our-services .service-box {
+        padding: 2rem 1rem;
+    }
+
+    #our-services .service-box img {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #4f83cc, #6dbf96);
+    color: white;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 22%;
+}
+
+.footer-column h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffcc00; /* Hover effect color */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Hover effect color */
+}
+
+.footer-bottom {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* WhatsApp Chat Icon */
+.whatsapp-chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-chat-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.whatsapp-chat-icon:hover {
+    transform: scale(1.1);
+}
+ 
+
+/* CSS for bounce animation (add this in styles1.css)*/
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+/* General Section Styles */
+.section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.alt-section {
+    background-color: #ffffff;
+}
+
+/* Section Titles and Descriptions */
+.section-title {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+/* Umrah and Ziyarat Packages */
+.package-cards, .ziyarat-locations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card, .location-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover, .location-card:hover {
+    transform: scale(1.05);
+}
+
+.card h3, .location-card h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card p, .location-card p {
+    color: #666666;
+}
+
+/* Iraq Section */
+.highlights-list {
+    list-style: none;
+    padding: 0;
+    color: #555555;
+    font-size: 1rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.highlights-list li {
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666666;
+}
+
+/* Contact Us Section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+/* About Us Section */
+.about-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.about-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .package-cards, .services-grid, .ziyarat-locations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .location-card, .service-card {
+        width: 100%;
+    }
+}
+
